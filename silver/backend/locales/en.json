@@ -1,0 +1,26 @@
+{
+	"user": {
+		"exists": "User already exists",
+		"registered_successfully": "User registered successfully",
+		"invalid_credentials": "Invalid credentials",
+		"logged_in_successfully": "Logged in successfully",
+		"no_token": "No token, authorization denied",
+		"invalid_token": "Token is not valid",
+		"access_token_refreshed": "Access token refreshed",
+		"logged_out_successfully": "Logged out successfully"
+	},
+	"validation": {
+		"full_name_required": "Full name is required",
+		"phone_number_required": "Phone number is required",
+		"invalid_email": "Please enter a valid email",
+		"password_length": "Password must be at least 6 characters long",
+		"password_required": "Password is required"
+	},
+	"server_error": "Server Error",
+	"too_many_attempts": "Too many login attempts from this IP, please try again after 15 minutes",
+	"auth_service_running": "Auth Service is running!",
+	"auth": {
+		"no_token": "Unauthorized",
+		"invalid_token": "Token is not valid"
+	}
+}

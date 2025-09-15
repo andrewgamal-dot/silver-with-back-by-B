@@ -1,0 +1,83 @@
+.timer-toggle-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.timer-toggle-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 215, 0, 0.4);
+}
+
+.draggable-timer-container {
+  position: fixed;
+  background: rgba(40, 40, 40, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  z-index: 1010;
+  color: white;
+  width: 250px;
+  cursor: move;
+  user-select: none;
+}
+
+.timer-display {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.timer-controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.timer-button {
+  flex-grow: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: #eee;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timer-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.timer-button.primary {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #000;
+  border-color: #ffd700;
+  font-weight: 600;
+}
+
+.timer-button.primary:hover {
+  background: linear-gradient(135deg, #ffed4e, #ffd700);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+}
